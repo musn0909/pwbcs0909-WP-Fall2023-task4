@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Your Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .navbar img {
+        max-height: 40px;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .navbar li {
+        margin-right: 20px;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .navbar a:hover {
+        color: #f00;
+    }
+    
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .product-container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #d4d3d3;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(188, 185, 185, 0.1);
+        }
+
+        .product-image {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .product-title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .product-author {
+            color: #555;
+        }
+
+        .product-description {
+            font-size: 1.1em;
+            margin: 20px 0;
+        }
+
+        .product-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #e44d26;
+        }
+
+        .buy-button {
+            background-color: #e44d26;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background-color: #c3351f;
+        }
+        .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .footer-info p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    
+    .social-links a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    
+    .social-links a:hover {
+        color: #f00;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <header class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Bookstore Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </header>
+    <div class="product-container">
+        <img src="product5.jpg" alt="Book Cover" class="product-image">
+        <h2 class="product-title">Raja Gidh</h2>
+        <p class="product-author">By Bano Qudsia</p>
+        <p class="product-description"> Gidh is the Urdu word for a vulture and Raja is a Hindi synonym for king. The name anticipates the kingdom of vultures. In fact, parallel to the main plot of the novel, an allegorical story of such a kingdom is narrated. The metaphor of the vulture as an animal feeding mostly on the carcasses of dead animals is employed to portray the trespassing of ethical limits imposed by the society or by the religion.</p>
+        <p class="product-price">RS 1500</p>
+        <button class="buy-button">Add to Cart</button>
+    </div>
+    <div class="product-container">
+        <img src="product6.jpg" alt="Book Cover" class="product-image">
+        <h2 class="product-title">Mann Chalay Ka Sauda</h2>
+        <p class="product-author">By Ashfaq Ahmed</p>
+        <p class="product-description">An unforgettable spiritual journey! Undoubtedly, one of Ashfaq Ahmed's greatest works of literature. This drama will move you, inspire you, and probably even change your life.</p>
+        <p class="product-price">RS 1300</p>
+        <button class="buy-button">Add to Cart</button>
+    </div>
+    <div class="product-container">
+        <img src="product7.jpeg" alt="Book Cover" class="product-image">
+        <h2 class="product-title">Shahab Nama</h2>
+        <p class="product-author">By Qudrat Ullah Shahab</p>
+        <p class="product-description">It covers his childhood, education, work life, admission to Imperial Civil Service, thoughts about Pakistan and his religious and spiritual experiences. Mushfiq Khwaja, a close friend of Shahab, was one of those who criticised the book for its exaggerations, inaccuracies and stretched truths. Considering Shahab's reputation as a man of integrity and a Sufi, Dawn wrote that "he mainly told the truth but there were things that he stretched.</p>
+        <p class="product-price">RS 2000</p>
+        <button class="buy-button">Add to Cart</button>
+    </div>
+    <div class="product-container">
+        <img src="product1.jpg" alt="Book Cover" class="product-image">
+        <h2 class="product-title">The Great Gatsby</h2>
+        <p class="product-author">By  F. Scott Fitzgerald</p>
+        <p class="product-description">The novel was inspired by a youthful romance Fitzgerald had with socialite Ginevra King, and the riotous parties he attended on Long Island's North Shore in 1922. </p>
+        <p class="product-price">RS 900</p>
+        <button class="buy-button">Add to Cart</button>
+    </div>
+    <div class="product-container">
+        <img src="product2.jpg" alt="Book Cover" class="product-image">
+        <h2 class="product-title">Nineteen Eighty-Four</h2>
+        <p class="product-author">By  George Orwell</p>
+        <p class="product-description">The story takes place in an imagined future in an unspecified year believed to be 1984, when much of the world is in perpetual war. Great Britain, now known as Airstrip One, has become a province of the totalitarian superstate Oceania, which is led by Big Brother, a dictatorial leader supported by an intense cult of personality manufactured by the Party's Thought Police.</p>
+        <p class="product-price">RS 1200</p>
+        <button class="buy-button">Add to Cart</button>
+    </div>
+    <div class="product-container">
+        <img src="product3.jpg" alt="Book Cover" class="product-image">
+        <h2 class="product-title">One Hundred Years of Solitude</h2>
+        <p class="product-author">By Gabriel García Márquez</p>
+        <p class="product-description">The magical realist style and thematic substance of One Hundred Years of Solitude established it as an important representative novel of the literary Latin American Boom of the 1960s and 1970s,[5] which was stylistically influenced by Modernism (European and North American) and the Cuban Vanguardia (Avant-Garde) literary movement.</p>
+        <p class="product-price">RS 600</p>
+        <button class="buy-button">Add to Cart</button>
+    </div>
+    <div class="product-container">
+        <img src="product4.jpg" alt="Book Cover" class="product-image">
+        <h2 class="product-title">Beloved (novel)</h2>
+        <p class="product-author">By  Toni Morrison</p>
+        <p class="product-description">The novel won the Pulitzer Prize for Fiction a year after its publication, and was a finalist for the 1987 National Book Award.</p>
+        <p class="product-price">RS 1000</p>
+        <button class="buy-button">Add to Cart</button>
+    </div>
+    
+    <footer class="footer container">
+        <div class="footer-info">
+            <p>Standard House Of Publishing: Opposite Iqbal Library, Iqbal Library Road, Jhelum – 49600
+
+                Jhelum, Punjab, Pakistan.
+                
+                </p>
+            <p>Phone: (+92) 332-7890678</p>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    ul, li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .navbar {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .navbar img {
+        max-height: 40px;
+    }
+    
+    .navbar ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .navbar li {
+        margin-right: 20px;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .navbar a:hover {
+        color: #f00;
+    }
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .slider {
+      display: flex;
+      transition: transform 0.5s;
+    }
+    
+    .slider img {
+      width: 400px;
+      height: 200px;
+    }
+    
+    .slider-button {
+      cursor: pointer;
+    }
+    
+    .hero {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #f9f6f6;
+        text-align: center;
+        padding: 100px 0;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    
+    .cta-button {
+        display: inline-block;
+        background-color: #f00;
+        color: #fff;
+        font-size: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    .cta-button:hover {
+        background-color: #ff0000;
+    }
+    
+    
+    .product-listings h2 {
+        font-size: 24px;
+    }
+    
+    .product-card {
+        background-color: #d4d3d3;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+    
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .product-card h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    
+    .product-card p.price {
+        color: rgb(17, 9, 9);
+        font-weight: bold;
+    }
+    
+    
+    
+    
+    
+    
+    .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .footer-info p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    
+    .social-links a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    
+    .social-links a:hover {
+        color: #f00;
+    }</style>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Bookstore Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+
+    
+    <section class="hero">
+        <h1>Welcome to our Bookstore</h1>
+        <p>Discover a world of knowledge and adventure through our wide selection of books.</p>
+        <a href="#products" class="cta-button">Shop Now</a>
+    </section>
+    <div class="slider-container">
+        <div class="slider">
+          <img src="image1.jpg" alt="Image 1">
+          <img src="image2.jpg" alt="Image 2">
+          <img src="image3.jpg" alt="Image 3">
+          <img src="image4.jpg" alt="Image 4">
+        </div>
+      </div>
+      <button class="slider-button" onclick="prevSlide()">&#9665;</button>
+      <button class="slider-button" onclick="nextSlide()">&#9655;</button>
+    
+      <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slider img');
+    
+        function showSlide(n) {
+          slideIndex = n;
+          if (n < 0) {
+            slideIndex = slides.length - 1;
+          } else if (n >= slides.length) {
+            slideIndex = 0;
+          }
+          document.querySelector('.slider').style.transform = `translateX(-${slideIndex * 400}px)`;
+        }
+    
+        function nextSlide() {
+          showSlide(slideIndex + 1);
+        }
+    
+        function prevSlide() {
+          showSlide(slideIndex - 1);
+        }
+    
+        showSlide(slideIndex);
+      </script>
+    
+    <section class="product-listings container">
+        <h2>Featured Books</h2>
+        <div class="product-card">
+            <img src="book1.jpg" alt="Book 1">
+            <h3> Pir-e-Kamil</h3>
+            <p class="price">RS 1000</p>
+            <p class="description">Pir-e-Kamil or Peer-e-Kamil is a novel written by Pakistani writer Umera Ahmad. It was first published in Urdu in 2004 and later in English in 2011. The book deals with the turning points in intervening lives of two people: a runaway girl named Imama Hashim; and a boy named Salar Sikander with an IQ of more than 150</p>
+        </div>
+        <div class="product-card">
+            <img src="book2.jpg" alt="Book 2">
+            <h3>Abdullah</h3>
+            <p class="price">RS 1200</p>
+            <p class="description">The novel teaches readers about Sufism and it answers a lot of questions about science and religion i.e. there are a lot of questions that science cannot answer. It has a vast spiritual experience which gives you answers about divinity.</p>
+        </div>
+        
+    </section>
+
+
+    
+
+    
+    <footer class="footer container">
+        <div class="footer-info">
+            <p>Standard House Of Publishing: Opposite Iqbal Library, Iqbal Library Road, Jhelum – 49600
+
+                Jhelum, Punjab, Pakistan.
+                
+                </p>
+            <p>Phone: (+92) 332-7890678</p>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
